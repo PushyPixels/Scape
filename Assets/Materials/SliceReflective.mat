@@ -35,15 +35,15 @@ Material:
       data:
         first:
           name: _Frequency
-        second: 1.07142854
+        second: 4
       data:
         first:
           name: _Offset
-        second: .107142851
+        second: 1
       data:
         first:
           name: _Percentage
-        second: .232142866
+        second: .307142884
     m_Colors:
       data:
         first:
@@ -52,8 +52,8 @@ Material:
       data:
         first:
           name: _SpecColor
-        second: {r: .5, g: .5, b: .5, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _ReflectColor
-        second: {r: 1, g: 1, b: 1, a: .5}
+        second: {r: 1, g: 0, b: 0, a: .352941185}

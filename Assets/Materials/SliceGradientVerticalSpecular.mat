@@ -16,20 +16,20 @@ Material:
     m_Floats:
       data:
         first:
-          name: _Frequency
-        second: 1
-      data:
-        first:
-          name: _Offset
-        second: .497142851
-      data:
-        first:
           name: _Shininess
         second: .0199999996
       data:
         first:
+          name: _Frequency
+        second: 3
+      data:
+        first:
+          name: _Offset
+        second: .622142851
+      data:
+        first:
           name: _Percentage
-        second: .161428571
+        second: .107142851
     m_Colors:
       data:
         first:

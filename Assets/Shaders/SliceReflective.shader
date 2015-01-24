@@ -13,6 +13,7 @@ Properties {
 SubShader {
 	LOD 300
 	Tags { "RenderType"="Opaque" }
+	Cull Off
 
 CGPROGRAM
 #pragma surface surf BlinnPhong vertex:vert
