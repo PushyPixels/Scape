@@ -50,12 +50,12 @@ Material:
       data:
         first:
           name: _Scale
-        second: 1.77999997
+        second: 197.190002
     m_Colors:
       data:
         first:
           name: _Color
-        second: {r: .645436049, g: .441176474, b: 1, a: 1}
+        second: {r: .583359599, g: .42382136, b: .860294104, a: 1}
       data:
         first:
           name: _SpecColor

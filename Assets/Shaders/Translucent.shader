@@ -1,4 +1,6 @@
-﻿Shader "Custom/Translucent" {
+﻿//Found here: http://www.farfarer.com/blog/2012/09/11/translucent-shader-unity3d/
+
+Shader "Custom/Translucent" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 		_BumpMap ("Normal (Normal)", 2D) = "bump" {}
