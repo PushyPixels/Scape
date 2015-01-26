@@ -31,7 +31,7 @@ Material:
       data:
         first:
           name: _Shininess
-        second: .078125
+        second: .0500000007
       data:
         first:
           name: _Frequency

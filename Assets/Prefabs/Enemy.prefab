@@ -10,8 +10,9 @@ GameObject:
   - 4: {fileID: 480658}
   - 33: {fileID: 3380658}
   - 23: {fileID: 2380658}
+  - 114: {fileID: 11491142}
   m_Layer: 0
-  m_Name: Octahedron
+  m_Name: Shell1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +44,7 @@ GameObject:
   - 33: {fileID: 3392932}
   - 23: {fileID: 2392932}
   m_Layer: 0
-  m_Name: Octahedron
+  m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,8 +60,9 @@ GameObject:
   - 4: {fileID: 492936}
   - 33: {fileID: 3392934}
   - 23: {fileID: 2392934}
+  - 114: {fileID: 11491144}
   m_Layer: 0
-  m_Name: Octahedron
+  m_Name: Shell2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +103,7 @@ Transform:
   m_GameObject: {fileID: 192934}
   m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .330000013, y: .899999976, z: .5}
+  m_LocalScale: {x: .330000013, y: 1, z: .5}
   m_Children: []
   m_Father: {fileID: 492932}
   m_RootOrder: 0
@@ -198,6 +200,32 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192936}
   m_Mesh: {fileID: 4300000, guid: ca1336bb71d5341e0962b462d49c8613, type: 3}
+--- !u!114 &11491142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4141b0480994d22a8d0a6a405d3cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 0, y: 1, z: 0}
+  speed: 60
+--- !u!114 &11491144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d4141b0480994d22a8d0a6a405d3cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: {x: 0, y: 1, z: 0}
+  speed: -60
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
