@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3380658}
   - 23: {fileID: 2380658}
   - 114: {fileID: 11491142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shell1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 492932}
-  m_Layer: 0
+  - 114: {fileID: 11423246}
+  - 114: {fileID: 11423248}
+  m_Layer: 11
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +45,7 @@ GameObject:
   - 4: {fileID: 492934}
   - 33: {fileID: 3392932}
   - 23: {fileID: 2392932}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Core
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +63,7 @@ GameObject:
   - 33: {fileID: 3392934}
   - 23: {fileID: 2392934}
   - 114: {fileID: 11491144}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shell2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +89,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00999999978, y: 0, z: 0}
+  m_LocalPosition: {x: 1.47000003, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 492934}
@@ -200,6 +202,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192936}
   m_Mesh: {fileID: 4300000, guid: ca1336bb71d5341e0962b462d49c8613, type: 3}
+--- !u!114 &11423246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aeebab47b96c4869b08cc8898322394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectTag: Player
+  speed: 3.5
+--- !u!114 &11423248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b903f2b577ac4ff78b266e6fa958c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 3328
 --- !u!114 &11491142
 MonoBehaviour:
   m_ObjectHideFlags: 1
