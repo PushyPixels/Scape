@@ -15,6 +15,7 @@ public class OctoPushyDeath : Death
 
 	public override void Die()
 	{
+		base.Die();
 		animator.SetTrigger(animationTrigger);
 		Instantiate(particleEffect,transform.position,transform.rotation);
 

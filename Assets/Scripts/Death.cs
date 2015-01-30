@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class Death : MonoBehaviour
+public class Death : MonoBehaviour
 {
-	public abstract void Die();
+	public int XPValue = 1;
+
+	public virtual void Die()
+	{
+		PlayerLevel.AddXP(XPValue);
+	}
 }

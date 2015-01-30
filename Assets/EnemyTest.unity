@@ -150,8 +150,9 @@ GameObject:
   - 114: {fileID: 399342926}
   - 135: {fileID: 399342925}
   - 114: {fileID: 399342924}
+  - 95: {fileID: 399342929}
   m_Layer: 11
-  m_Name: Enemy
+  m_Name: OctoPushySE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -184,8 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f28f8be7cf04b5b8b478d9fb1084a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffect: {fileID: 0}
-  animationTrigger: 
+  particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
+  animationTrigger: Death
 --- !u!135 &399342925
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -242,6 +243,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!95 &399342929
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9506556, guid: f9ad12d280ce443ad9a72ea46d3964b4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1959002936}
+  m_GameObject: {fileID: 399342922}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d7ecc5c234e54481abbf556c755e206c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &713389433
 GameObject:
   m_ObjectHideFlags: 0
