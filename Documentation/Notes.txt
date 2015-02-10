@@ -1,1 +1,67 @@
 Things to accomplish on this project / ideas / stuff like that… YAY!
+
+Scape: A futuristic hacking game that closely follows the Diablo formula!  LOOT AND XP FOR THE WIN
+
+Damage system:
+	For the player:
+		Defense rating
+		Attack rating
+		Weapon modifiers
+		Skill modifiers
+		Level
+			Modifies skill levels
+			Modifies Defense and Attack ratings
+	For NPCs:
+		Defense rating
+		Attack rating
+		Level
+			Modifies Defense and attack ratings
+
+Skills:
+	Slot for attack type (Which determines the behaviour of the attack
+		Examples:
+			Short range melee
+			Long range raycast
+			Long/short range projectiles
+			Special thing like
+				Bounce shots
+				Whilwinds
+				Maybe pets
+	Slot for damage or damage types
+		Balance between attack and defense
+		Damage types (If/when we ever have them)
+	Passive skill system/slots
+
+Connections:
+Levels:
+	Each level increases attack and defense ratings (For NPC and Player)
+		Each level may also modify skills in some way (For player)
+			My initial thought is simply Diablo 2 style skill levels
+				Place the point where you want it each level
+	For enemies, each enemy should be tweakable to have different amounts of attack/defense per level; so we can make tougher enemies that spawn at the same level
+	
+Attack/defense ratings:
+	Modified by (Player):
+		Level
+		Equipment
+		Permanent/temporary items (consumables)
+		Skills/Passive skills
+		Debuffs
+	Modified by (Enemies):
+		Per-level increases of attack/defense (tweak-able per enemy)
+		Debuffs
+
+equipmentDamage is a RANGE, so there's a random roll involved (Think 4-7 damage)
+
+baseDamage = equipmentDamage + levelDamageBonus + any other bonuses (Skills, etc)
+
+Player Damage = baseDamage * (playerAttackRating/enemyDefenseRating)
+
+Criticals/Critical rate
+
+
+For future use/expansion:
+	Enemies carrying/using weapons
+	Damage types (Like Fire/Water, but with computer equivalents)
+		This also means we'd need Defense ratings per damage type
+	I like synergy bonuses - but we might not have them
