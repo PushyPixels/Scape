@@ -53,12 +53,13 @@ Attack/defense ratings:
 
 equipmentDamage is a RANGE, so there's a random roll involved (Think 4-7 damage)
 
-baseDamage = equipmentDamage + levelDamageBonus + any other bonuses (Skills, etc)
+baseDamage = equipmentDamage * levelDamageBonusPercentage + any other bonuses (Skills, etc)
+
+skills: need percentage modifier (To balance AOE/DOT with direct damage)
 
 Player Damage = baseDamage * (playerAttackRating/enemyDefenseRating)
 
 Criticals/Critical rate
-
 
 For future use/expansion:
 	Enemies carrying/using weapons

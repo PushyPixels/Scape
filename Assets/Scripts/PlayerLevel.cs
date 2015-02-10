@@ -5,22 +5,38 @@ public class PlayerLevel : MonoBehaviour
 {
 	public static PlayerLevel Instance;
 
+	[Header("Tweak Variables")]
+	public float perLevelBonusPercentage = 0.1f; //Ten percent
+	public int perLevelAttackRatingIncrease = 10;
+	public int perLevelDefenceRatingIncrease = 10;
+
+	[Header("In-Game Variables")]
+	public float damageBonusPercentage = 1.0f;
+	public int attackRating = 20;
+	public int defenseRating = 20;
 	public int currentLevel = 1;
 	public int maxLevel = 70;
-
-	private int _XP = 0;
+	public int XP = 0;
 
 	public static void AddXP(int amount)
 	{
-		Instance._XP += amount;
-		while(Instance._XP > GetNextLevelXPRequirement())
+		Instance.XP += amount;
+		while(Instance.XP > GetNextLevelXPRequirement())
 		{
-			Instance.currentLevel++;
+			LevelUp();
 		}
 		if(Instance.currentLevel > Instance.maxLevel)
 		{
 			Instance.currentLevel = Instance.maxLevel;
 		}
+	}
+
+	public static void LevelUp()
+	{
+		Instance.currentLevel++;
+		Instance.damageBonusPercentage += Instance.perLevelBonusPercentage;
+		Instance.attackRating += Instance.perLevelAttackRatingIncrease;
+		Instance.defenseRating += Instance.perLevelDefenceRatingIncrease;
 	}
 
 	public static int GetNextLevelXPRequirement()
@@ -52,7 +68,7 @@ public class PlayerLevel : MonoBehaviour
 	void OnGUI()
 	{
 		GUILayout.Label("Level: " + currentLevel);
-		GUILayout.Label("XP: " + _XP);
+		GUILayout.Label("XP: " + XP);
 		GUILayout.Label("Next level at: " + GetNextLevelXPRequirement());
 	}
 

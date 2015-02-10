@@ -2465,8 +2465,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 043b4985af9994559be298252512464a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  perLevelBonusPercentage: .100000001
+  perLevelAttackRatingIncrease: 10
+  perLevelDefenceRatingIncrease: 10
+  damageBonusPercentage: 1
+  attackRating: 0
+  defenseRating: 20
   currentLevel: 1
   maxLevel: 70
+  XP: 0
 --- !u!1 &1184058106
 GameObject:
   m_ObjectHideFlags: 0
