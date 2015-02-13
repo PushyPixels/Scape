@@ -32,6 +32,7 @@ GameObject:
   - 114: {fileID: 11498292}
   - 95: {fileID: 9506556}
   - 65: {fileID: 6558362}
+  - 114: {fileID: 11495704}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -287,6 +288,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axis: {x: 0, y: 1, z: 0}
   speed: -60
+--- !u!114 &11495704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!114 &11498290
 MonoBehaviour:
   m_ObjectHideFlags: 1

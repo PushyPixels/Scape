@@ -21,10 +21,13 @@ public class ProjectileSkill : Skill
 
 	public override void Cast()
 	{
+		base.Cast();
 		if(canShoot)
 		{
 			DamageOnTriggerEnter instance = Instantiate(projectile,transform.position,transform.rotation) as DamageOnTriggerEnter;
-			instance.damageAmount = 1.0f * damagePercentage; //This needs to pull from the current equipment information/damage
+
+			Weapon wep = GetComponentInChildren<Weapon>();
+			instance.damageAmount = wep.WeaponDamage() * damagePercentage;
 			
 			canShoot = false;
 			Invoke("ResetShot",cooldown);

@@ -19,8 +19,6 @@ public class ShootOnAxisInput : MonoBehaviour
 			transform.rotation = Quaternion.LookRotation(shootDirection,Vector3.up);
 
 			currentSkill.Cast();
-
-
 		}
 	}
 }

@@ -161,6 +161,7 @@ GameObject:
   - 114: {fileID: 38512636}
   - 95: {fileID: 38512635}
   - 65: {fileID: 38512637}
+  - 114: {fileID: 38512641}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -270,6 +271,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!114 &38512641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1696347242}
+  m_GameObject: {fileID: 38512633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &167012444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1063,79 @@ MeshFilter:
   m_PrefabInternal: {fileID: 590825928}
   m_GameObject: {fileID: 355337039}
   m_Mesh: {fileID: 4300000, guid: ca1336bb71d5341e0962b462d49c8613, type: 3}
+--- !u!1 &365250591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 365250595}
+  - 114: {fileID: 365250594}
+  - 114: {fileID: 365250593}
+  - 114: {fileID: 365250592}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &365250592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365250591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1997211142, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowActivationOnStandalone: 0
+--- !u!114 &365250593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365250591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_AllowActivationOnMobileDevice: 0
+--- !u!114 &365250594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365250591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &365250595
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 365250591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
 --- !u!1 &368182148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1667,7 @@ GameObject:
   - 114: {fileID: 881721285}
   - 95: {fileID: 881721284}
   - 65: {fileID: 881721286}
+  - 114: {fileID: 881721290}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -1689,6 +1777,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!114 &881721290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 352442966}
+  m_GameObject: {fileID: 881721282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &889304510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2193,7 @@ GameObject:
   - 114: {fileID: 1137641158}
   - 95: {fileID: 1137641157}
   - 65: {fileID: 1137641159}
+  - 114: {fileID: 1137641163}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -2201,6 +2303,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!114 &1137641163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 702436462}
+  m_GameObject: {fileID: 1137641155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1001 &1139170592
 Prefab:
   m_ObjectHideFlags: 0
@@ -2335,6 +2450,7 @@ GameObject:
   - 114: {fileID: 1150936227}
   - 114: {fileID: 1150936228}
   - 114: {fileID: 1150936229}
+  - 114: {fileID: 1150936230}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -2488,6 +2604,19 @@ MonoBehaviour:
   damagePercentage: 1
   projectile: {fileID: 11484104, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   cooldown: .100000001
+--- !u!114 &1150936230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150936219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7caf1680dbd0432487557550b4a9377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDamage: 1
+  maxDamage: 10
 --- !u!1 &1184058106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2821,7 @@ GameObject:
   - 114: {fileID: 1329619028}
   - 95: {fileID: 1329619027}
   - 65: {fileID: 1329619029}
+  - 114: {fileID: 1329619034}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -2801,6 +2931,19 @@ Transform:
   - {fileID: 1620651497}
   m_Father: {fileID: 0}
   m_RootOrder: 17
+--- !u!114 &1329619034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1522379758}
+  m_GameObject: {fileID: 1329619026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1339952591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,6 +3028,7 @@ GameObject:
   - 114: {fileID: 1398399875}
   - 95: {fileID: 1398399874}
   - 65: {fileID: 1398399876}
+  - 114: {fileID: 1398399880}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -2994,6 +3138,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!114 &1398399880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2014388096}
+  m_GameObject: {fileID: 1398399872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1398903623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3077,6 +3234,7 @@ GameObject:
   - 114: {fileID: 1423608454}
   - 95: {fileID: 1423608453}
   - 65: {fileID: 1423608455}
+  - 114: {fileID: 1423608459}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -3186,6 +3344,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!114 &1423608459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1233016410}
+  m_GameObject: {fileID: 1423608451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1456482702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,6 +3598,7 @@ GameObject:
   - 114: {fileID: 1567029535}
   - 95: {fileID: 1567029534}
   - 65: {fileID: 1567029536}
+  - 114: {fileID: 1567029540}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -3536,6 +3708,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!114 &1567029540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1139170592}
+  m_GameObject: {fileID: 1567029532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1616695083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3798,6 +3983,7 @@ GameObject:
   - 114: {fileID: 1767064792}
   - 95: {fileID: 1767064791}
   - 65: {fileID: 1767064793}
+  - 114: {fileID: 1767064797}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -3907,6 +4093,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!114 &1767064797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 341996699}
+  m_GameObject: {fileID: 1767064789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1777002299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4125,6 +4324,7 @@ GameObject:
   - 114: {fileID: 1863870407}
   - 95: {fileID: 1863870406}
   - 65: {fileID: 1863870408}
+  - 114: {fileID: 1863870413}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -4234,6 +4434,19 @@ Transform:
   - {fileID: 1216251662}
   m_Father: {fileID: 0}
   m_RootOrder: 15
+--- !u!114 &1863870413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 590825928}
+  m_GameObject: {fileID: 1863870405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1891410600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4584,6 +4797,7 @@ GameObject:
   - 114: {fileID: 1937142469}
   - 95: {fileID: 1937142468}
   - 65: {fileID: 1937142470}
+  - 114: {fileID: 1937142475}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -4693,6 +4907,108 @@ Transform:
   - {fileID: 1456482703}
   m_Father: {fileID: 0}
   m_RootOrder: 21
+--- !u!114 &1937142475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 216115255}
+  m_GameObject: {fileID: 1937142467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+--- !u!1 &1942568640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1942568644}
+  - 223: {fileID: 1942568643}
+  - 114: {fileID: 1942568642}
+  - 114: {fileID: 1942568641}
+  m_Layer: 5
+  m_Name: DamageCanvas
+  m_TagString: DamageCanvas
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1942568641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942568640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreReversedGraphics: 1
+  blockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1942568642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942568640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1942568643
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942568640}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!224 &1942568644
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942568640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1945667868
 GameObject:
   m_ObjectHideFlags: 0
@@ -4970,6 +5286,7 @@ GameObject:
   - 114: {fileID: 2092360033}
   - 95: {fileID: 2092360032}
   - 65: {fileID: 2092360034}
+  - 114: {fileID: 2092360038}
   m_Layer: 11
   m_Name: OctoPushy
   m_TagString: Untagged
@@ -5079,3 +5396,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectTag: Player
   speed: 3.5
+--- !u!114 &2092360038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11495704, guid: b652a74fda717404db2a08a41a549b1a,
+    type: 2}
+  m_PrefabInternal: {fileID: 752116253}
+  m_GameObject: {fileID: 2092360030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
