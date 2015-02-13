@@ -61,8 +61,15 @@ Player Damage = baseDamage * (playerAttackRating/enemyDefenseRating)
 
 Criticals/Critical rate
 
+Notes and thoughts:
+	Have a weapon modifier that allows you to simultaneously cast multiple skills
+
 For future use/expansion:
+	Attack speed modifiers?
 	Enemies carrying/using weapons
 	Damage types (Like Fire/Water, but with computer equivalents)
 		This also means we'd need Defense ratings per damage type
 	I like synergy bonuses - but we might not have them
+	Stores?
+		Dancing store owner?  happy town music?
+		Hack the store?

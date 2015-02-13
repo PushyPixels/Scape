@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11426398}
   - 114: {fileID: 11403824}
   - 54: {fileID: 5416212}
-  - 114: {fileID: 11443522}
+  - 114: {fileID: 11484104}
   m_Layer: 9
   m_Name: PlayerBullet
   m_TagString: Untagged
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!114 &11443522
+--- !u!114 &11484104
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -107,10 +107,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 126398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1737525757ec94ef5962e89481e8649d, type: 3}
+  m_Script: {fileID: 11500000, guid: 62d1b30ae1a404031bcd6712d2d204db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageBonus: 1
+  damageAmount: 0
 --- !u!135 &13526398
 SphereCollider:
   m_ObjectHideFlags: 1

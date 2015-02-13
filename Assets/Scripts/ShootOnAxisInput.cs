@@ -3,21 +3,13 @@ using System.Collections;
 
 public class ShootOnAxisInput : MonoBehaviour
 {
-	public GameObject bullet;
-
+	public Skill currentSkill;
 	public string horizontalAxis = "Horizontal";
 	public string verticalAxis = "Vertical";
 
-	public float shootDelay = 0.1f;
-
 	private bool canShoot = true;
+	
 
-	
-	void ResetShot ()
-	{
-		canShoot = true;
-	}
-	
 	// Update is called once per frame
 	void Update ()
 	{
@@ -26,13 +18,9 @@ public class ShootOnAxisInput : MonoBehaviour
 		{
 			transform.rotation = Quaternion.LookRotation(shootDirection,Vector3.up);
 
-			if(canShoot)
-			{
-				Instantiate(bullet,transform.position,transform.rotation);
+			currentSkill.Cast();
 
-				canShoot = false;
-				Invoke("ResetShot",shootDelay);
-			}
+
 		}
 	}
 }

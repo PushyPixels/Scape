@@ -2334,6 +2334,7 @@ GameObject:
   - 54: {fileID: 1150936226}
   - 114: {fileID: 1150936227}
   - 114: {fileID: 1150936228}
+  - 114: {fileID: 1150936229}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -2352,10 +2353,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a303a763cdc70464aa830daedca03417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
+  currentSkill: {fileID: 1150936229}
   horizontalAxis: HorizontalAim
   verticalAxis: VerticalAim
-  shootDelay: .100000001
 --- !u!114 &1150936221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2474,6 +2474,20 @@ MonoBehaviour:
   currentLevel: 1
   maxLevel: 70
   XP: 0
+--- !u!114 &1150936229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150936219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edba198de9944f6a9bc450363fe73ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePercentage: 1
+  projectile: {fileID: 11484104, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
+  cooldown: .100000001
 --- !u!1 &1184058106
 GameObject:
   m_ObjectHideFlags: 0
