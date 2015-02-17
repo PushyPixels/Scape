@@ -17,6 +17,6 @@ public class SpawnDamageNumberOnDamage : MonoBehaviour
 	{
 		Text instance = Instantiate(damageTextObject,transform.position,damageTextObject.transform.rotation) as Text;
 		instance.text = ((int)amount).ToString();
-		instance.transform.parent = damageCanvas.transform;
+		instance.transform.SetParent(damageCanvas.transform,false);
 	}
 }
