@@ -21,7 +21,6 @@ public class ProjectileSkill : Skill
 
 	public override void Cast()
 	{
-		base.Cast();
 		if(canShoot)
 		{
 			DamageOnTriggerEnter instance = Instantiate(projectile,transform.position,transform.rotation) as DamageOnTriggerEnter;
