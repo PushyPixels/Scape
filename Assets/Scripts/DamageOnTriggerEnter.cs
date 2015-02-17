@@ -13,6 +13,6 @@ public class DamageOnTriggerEnter : MonoBehaviour
 	// Update is called once per frame
 	void OnTriggerEnter(Collider col)
 	{
-		col.SendMessageUpwards("Damage",damageAmount,SendMessageOptions.DontRequireReceiver);
+		col.BroadcastMessage("Damage",damageAmount,SendMessageOptions.DontRequireReceiver);
 	}
 }

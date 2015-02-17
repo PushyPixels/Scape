@@ -73,3 +73,7 @@ For future use/expansion:
 	Stores?
 		Dancing store owner?  happy town music?
 		Hack the store?
+
+
+Assumptions!
+	Colliders for enemies, and other objects, should be at the TOP level of the hierarchy; this is because we use Broadcast message to send information to the children of objects with information regarding collisions (Like Damage stuff)

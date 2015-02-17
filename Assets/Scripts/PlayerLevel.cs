@@ -9,15 +9,18 @@ public class PlayerLevel : MonoBehaviour
 	public float perLevelBonusPercentage = 0.1f; //Ten percent
 	public int perLevelAttackRatingIncrease = 10;
 	public int perLevelDefenceRatingIncrease = 10;
+	public float perLevelHealthIncrease = 10.0f;
 
 	[Header("In-Game Variables")]
-	public float damageBonusPercentage = 1.0f;
-	public int attackRating = 20;
-	public int defenseRating = 20;
-	public int currentLevel = 1;
-	public int maxLevel = 70;
-	public int XP = 0;
-
+	[SerializeField] private int currentLevel = 1;
+	[SerializeField] private int XP = 0;
+	[SerializeField] private float HP;
+	[SerializeField] private float damageBonusPercentage = 1.0f;
+	[SerializeField] private int attackRating = 20;
+	[SerializeField] private int defenseRating = 20;
+	[SerializeField] private int maxLevel = 70;
+	[SerializeField] private bool isDead = false;
+	
 	public static void AddXP(int amount)
 	{
 		Instance.XP += amount;
@@ -72,10 +75,25 @@ public class PlayerLevel : MonoBehaviour
 		GUILayout.Label("Next level at: " + GetNextLevelXPRequirement());
 	}
 
+	void Damage(float amount)
+	{
+		HP -= amount;
+		if(HP <= 0.0f && !isDead)
+		{
+			Death();
+			isDead = true;
+		}
+	}
+
+	void Death()
+	{
+		GetComponent<Death>().Die();
+	}
 
 	
 	// Update is called once per frame
-	void Update () {
+	void Update()
+	{
 	
 	}
 }
