@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1 &8265306
 GameObject:
@@ -283,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &167012444
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +756,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!1 &264354840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,7 +1520,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 492932, guid: b652a74fda717404db2a08a41a549b1a, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b652a74fda717404db2a08a41a549b1a, type: 2}
@@ -1789,7 +1790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &889304510
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,7 +2316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1001 &1139170592
 Prefab:
   m_ObjectHideFlags: 0
@@ -2800,7 +2801,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 492932, guid: b652a74fda717404db2a08a41a549b1a, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b652a74fda717404db2a08a41a549b1a, type: 2}
@@ -2943,7 +2944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1339952591
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,7 +3151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1398903623
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,7 +3257,7 @@ Transform:
   - {fileID: 1980986828}
   - {fileID: 349417786}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!95 &1423608453
 Animator:
   serializedVersion: 3
@@ -3356,7 +3357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1456482702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,7 +3503,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!114 &1483374401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3720,7 +3721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1616695083
 GameObject:
   m_ObjectHideFlags: 0
@@ -4105,7 +4106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1777002299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,7 +4447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1891410600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4919,7 +4920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
 --- !u!1 &1942568640
 GameObject:
   m_ObjectHideFlags: 0
@@ -4949,8 +4950,8 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ignoreReversedGraphics: 1
-  blockingObjects: 0
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -4983,7 +4984,7 @@ Canvas:
   m_GameObject: {fileID: 1942568640}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -5000,15 +5001,15 @@ RectTransform:
   m_GameObject: {fileID: 1942568640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 676, y: 322}
+  m_Pivot: {x: .5, y: .5}
 --- !u!1 &1945667868
 GameObject:
   m_ObjectHideFlags: 0
@@ -5308,7 +5309,7 @@ Transform:
   - {fileID: 1130781258}
   - {fileID: 1965023265}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!95 &2092360032
 Animator:
   serializedVersion: 3
@@ -5408,4 +5409,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96ea03198516a4153957e9f32f2d925e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageTextObject: {fileID: 11411318, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
+  damageTextObject: {fileID: 11441378, guid: 8460155bcb9d64e7d9c7b94cddf2c0e4, type: 2}
