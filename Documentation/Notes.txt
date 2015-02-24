@@ -1,3 +1,8 @@
+ADVENTURES IN UI!
+	Figure out how to fix the scrolling
+		Currently can scroll out of bounds
+		Thought I fixed this with Content size fitter last time but not sure
+
 Things to accomplish on this project / ideas / stuff like that… YAY!
 
 Scape: A futuristic hacking game that closely follows the Diablo formula!  LOOT AND XP FOR THE WIN
