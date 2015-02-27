@@ -4,7 +4,7 @@ using System.Collections;
 
 public class WeaponGenerator : MonoBehaviour
 {
-	public WeaponGenerator Instance;
+	public static WeaponGenerator Instance;
 
 	public GameObject buttonPrefab;
 	public string[] wordList;
@@ -30,10 +30,12 @@ public class WeaponGenerator : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		GenerateInitialWeapon();
+		Weapon weapon = GenerateWeapon();
+		PlayerEquipment.Instance.currentWeapon = weapon;
+		weapon.GetComponent<Button>().interactable = false;
 	}
 
-	void GenerateInitialWeapon()
+	public Weapon GenerateWeapon()
 	{
 		GameObject instance = Instantiate(buttonPrefab,Vector3.zero,Quaternion.identity) as GameObject;
 		instance.transform.parent = transform;
@@ -65,8 +67,7 @@ public class WeaponGenerator : MonoBehaviour
 				weapon.maxDamage = weaponMaxDamage;
 			}
 		}
-		PlayerEquipment.Instance.currentWeapon = weapon;
-		weapon.GetComponent<Button>().interactable = false;
+		return weapon;
 	}
 	
 	// Update is called once per frame

@@ -9,5 +9,9 @@ public class Death : MonoBehaviour
 	public virtual void Die()
 	{
 		PlayerLevel.AddXP(XPValue);
+		if(Random.value <= dropPercentage)
+		{
+			WeaponGenerator.Instance.GenerateWeapon();
+		}
 	}
 }

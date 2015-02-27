@@ -4209,7 +4209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e79630c6c184ab892870c82f0f6b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Instance: {fileID: 0}
   buttonPrefab: {fileID: 174916, guid: fbd7dfa64987c45368c783bca787f027, type: 2}
   wordList:
   - Legendary
