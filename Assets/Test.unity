@@ -159,6 +159,7 @@ GameObject:
   - 223: {fileID: 11684139}
   - 114: {fileID: 11684138}
   - 114: {fileID: 11684137}
+  - 114: {fileID: 11684141}
   m_Layer: 5
   m_Name: MockWeaponInventoryCanvas
   m_TagString: Untagged
@@ -238,6 +239,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &11684141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11684136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111fe5972c58847cfa9ac6c794d0cdd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &38512633
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &38512637
@@ -2073,6 +2086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &881721286
@@ -2668,6 +2682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &1137641159
@@ -2860,7 +2875,7 @@ GameObject:
   - 114: {fileID: 1150936227}
   - 114: {fileID: 1150936228}
   - 114: {fileID: 1150936229}
-  - 114: {fileID: 1150936230}
+  - 114: {fileID: 1150936231}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -3017,7 +3032,7 @@ MonoBehaviour:
   damagePercentage: 1
   projectile: {fileID: 11484104, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   cooldown: .100000001
---- !u!114 &1150936230
+--- !u!114 &1150936231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3025,11 +3040,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150936219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca27e457411ef4a58af319ae83042ab2, type: 3}
+  m_Script: {fileID: 11500000, guid: eede8e0aa4e2441058d1a03958c1fa74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDamage: 1
-  maxDamage: 10
+  currentWeapon: {fileID: 0}
 --- !u!1 &1184058106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3352,6 +3366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &1329619029
@@ -3562,6 +3577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &1398399876
@@ -3755,6 +3771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &1423608455
@@ -3972,6 +3989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 100
+  dropPercentage: .5
 --- !u!114 &1483374402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4191,6 +4209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e79630c6c184ab892870c82f0f6b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Instance: {fileID: 0}
   buttonPrefab: {fileID: 174916, guid: fbd7dfa64987c45368c783bca787f027, type: 2}
   wordList:
   - Legendary
@@ -4274,7 +4293,6 @@ MonoBehaviour:
   maxWords: 4
   minDamage: 10
   maxDamage: 100
-  amount: 100
   damageSuffix: ' Damage'
 --- !u!114 &1538664900
 MonoBehaviour:
@@ -4395,6 +4413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &1567029536
@@ -4811,6 +4830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &1767064793
@@ -5123,6 +5143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &1863870408
@@ -5583,6 +5604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &1937142470
@@ -6075,6 +6097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XPValue: 1
+  dropPercentage: .5
   particleEffect: {fileID: 126398, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   animationTrigger: Death
 --- !u!65 &2092360034

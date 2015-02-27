@@ -25,7 +25,7 @@ public class ProjectileSkill : Skill
 		{
 			DamageOnTriggerEnter instance = Instantiate(projectile,transform.position,transform.rotation) as DamageOnTriggerEnter;
 
-			Weapon wep = GetComponentInChildren<Weapon>();
+			Weapon wep = PlayerEquipment.Instance.currentWeapon;
 			instance.damageAmount = wep.WeaponDamage() * damagePercentage;
 			
 			canShoot = false;
