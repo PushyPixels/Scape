@@ -38,7 +38,8 @@ public class WeaponGenerator : MonoBehaviour
 	public Weapon GenerateWeapon()
 	{
 		GameObject instance = Instantiate(buttonPrefab,Vector3.zero,Quaternion.identity) as GameObject;
-		instance.transform.parent = transform;
+
+		instance.transform.SetParent(transform,false);
 		
 		TestWeapon weapon = instance.AddComponent<TestWeapon>();
 		
@@ -53,7 +54,7 @@ public class WeaponGenerator : MonoBehaviour
 					finalName += wordList[Random.Range(0,wordList.Length)] + " ";
 				}
 				
-				weapon.name = finalName;
+				weapon.weaponName = finalName;
 				text.text = finalName;
 			}
 			else if(text.name == "Damage Range")

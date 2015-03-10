@@ -17,6 +17,7 @@ SubShader {
 
 CGPROGRAM
 #pragma surface surf BlinnPhong vertex:vert
+#pragma target 4.0
 
 sampler2D _MainTex;
 samplerCUBE _Cube;

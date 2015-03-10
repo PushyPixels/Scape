@@ -7,9 +7,6 @@ public class ShootOnAxisInput : MonoBehaviour
 	public string horizontalAxis = "Horizontal";
 	public string verticalAxis = "Vertical";
 
-	private bool canShoot = true;
-	
-
 	// Update is called once per frame
 	void Update ()
 	{
