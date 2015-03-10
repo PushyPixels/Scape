@@ -6,8 +6,8 @@ AnimationClip:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: OctoPushyDeathAnimation
-  serializedVersion: 4
-  m_AnimationType: 2
+  serializedVersion: 6
+  m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
@@ -21,17 +21,17 @@ AnimationClip:
         value: {x: .330000013, y: .300000012, z: .330000013}
         inSlope: {x: 0, y: 881.999939, z: 0}
         outSlope: {x: 0, y: 881.999939, z: 0}
-        tangentMode: 107
+        tangentMode: 0
       - time: .0166666675
         value: {x: .330000013, y: 15, z: .330000013}
         inSlope: {x: -.707142889, y: 0, z: -.707142889}
         outSlope: {x: -.707142889, y: 0, z: -.707142889}
-        tangentMode: 1869742196
+        tangentMode: 0
       - time: .25
         value: {x: 0, y: 15, z: 0}
         inSlope: {x: -1.41428578, y: 0, z: -1.41428578}
         outSlope: {x: -1.41428578, y: 0, z: -1.41428578}
-        tangentMode: 1095761920
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Core
@@ -142,4 +142,7 @@ AnimationClip:
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
   m_Events: []
