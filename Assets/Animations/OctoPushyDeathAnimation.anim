@@ -35,7 +35,21 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Core
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: Core
+    classID: 23
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -48,6 +62,12 @@ AnimationClip:
       attribute: 3
       script: {fileID: 0}
       classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3418303089
+      attribute: 3305885265
+      script: {fileID: 0}
+      classID: 23
       customType: 0
       isPPtrCurve: 0
     pptrCurveMapping: []
@@ -140,6 +160,20 @@ AnimationClip:
     attribute: m_LocalScale.z
     path: Core
     classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: Core
+    classID: 23
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0

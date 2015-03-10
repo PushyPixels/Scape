@@ -5,7 +5,7 @@ Properties {
 	_Shininess ("Shininess", Range (0.01, 1)) = 0.078125
 	_ReflectColor ("Reflection Color", Color) = (1,1,1,0.5)
 	_MainTex ("Base (RGB) Gloss (A)", 2D) = "white" {}
-	_Cube ("Reflection Cubemap", Cube) = "_Skybox" { TexGen CubeReflect }
+	_Cube ("Reflection Cubemap", Cube) = "_Skybox" { TexGen CubeReflect } //THIS IS OUR PROBLEM MAX LOOK HERE YOU IDIOT!
     _Frequency ("Clip Frequency", Range(0,10)) = 5.0
     _Offset ("Clip Offset", Range(0,1)) = 0
     _Percentage ("Fill Percentage", Range(1,0)) = 0.5
