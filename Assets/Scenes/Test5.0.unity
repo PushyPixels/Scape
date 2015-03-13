@@ -1591,6 +1591,7 @@ GameObject:
   - 114: {fileID: 1801757338}
   - 114: {fileID: 1801757337}
   - 114: {fileID: 1801757336}
+  - 114: {fileID: 1801757347}
   - 114: {fileID: 1801757335}
   - 215: {fileID: 1801757346}
   m_Layer: 10
@@ -1624,7 +1625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePercentage: 1
-  projectile: {fileID: 11484104, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
+  projectile: {fileID: 11437106, guid: 191d3592a96dc4d03bfc9f14cc39aa8a, type: 2}
   cooldown: .100000001
 --- !u!114 &1801757337
 MonoBehaviour:
@@ -1690,9 +1691,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a303a763cdc70464aa830daedca03417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentSkill: {fileID: 1801757336}
+  skillList:
+  - {fileID: 1801757336}
+  - {fileID: 1801757347}
   horizontalAxis: HorizontalAim
   verticalAxis: VerticalAim
+  switchSkillButton: Fire1
 --- !u!114 &1801757341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1796,6 +1800,20 @@ ReflectionProbe:
   m_RenderDynamicObjects: 0
   m_UseOcclusionCulling: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!114 &1801757347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1801757334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0edba198de9944f6a9bc450363fe73ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePercentage: 1
+  projectile: {fileID: 11423408, guid: ce2af45acd57e4fd9ba5987befb91715, type: 2}
+  cooldown: .5
 --- !u!1001 &1841752254
 Prefab:
   m_ObjectHideFlags: 0

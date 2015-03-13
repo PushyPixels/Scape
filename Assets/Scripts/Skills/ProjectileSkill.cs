@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ProjectileSkill : Skill
 {
-	public DamageOnTriggerEnter projectile;
+	public DamageInfo projectile;
 	public float cooldown = 0.1f;
 
 	private bool canShoot = true;
@@ -23,10 +23,10 @@ public class ProjectileSkill : Skill
 	{
 		if(canShoot)
 		{
-			DamageOnTriggerEnter instance = Instantiate(projectile,transform.position,transform.rotation) as DamageOnTriggerEnter;
+			DamageInfo instance = Instantiate(projectile,transform.position,transform.rotation) as DamageInfo;
 
 			Weapon wep = PlayerEquipment.Instance.currentWeapon;
-			instance.damageAmount = wep.WeaponDamage() * damagePercentage;
+			instance.damage = wep.WeaponDamage() * damagePercentage;
 			
 			canShoot = false;
 			Invoke("ResetShot",cooldown);

@@ -3,9 +3,13 @@ using System.Collections;
 
 public class ShootOnAxisInput : MonoBehaviour
 {
-	public Skill currentSkill;
+	//public Skill currentSkill;
+	public Skill[] skillList;
 	public string horizontalAxis = "Horizontal";
 	public string verticalAxis = "Vertical";
+	public string switchSkillButton = "Fire1";
+
+	private int selectedSkill = 0;
 
 	// Update is called once per frame
 	void Update ()
@@ -15,7 +19,16 @@ public class ShootOnAxisInput : MonoBehaviour
 		{
 			transform.rotation = Quaternion.LookRotation(shootDirection,Vector3.up);
 
-			currentSkill.Cast();
+			skillList[selectedSkill].Cast();
+		}
+
+		if(Input.GetButtonDown(switchSkillButton))
+		{
+			selectedSkill++;
+			if(selectedSkill >= skillList.Length)
+			{
+				selectedSkill = 0;
+			}
 		}
 	}
 }
