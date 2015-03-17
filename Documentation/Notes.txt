@@ -78,7 +78,29 @@ For future use/expansion:
 	Stores?
 		Dancing store owner?  happy town music?
 		Hack the store?
+	Buggy items
+		Do crazy stuff like lose materials, increase enemy size when struck, etc
 
 
 Assumptions!
 	Colliders for enemies, and other objects, should be at the TOP level of the hierarchy; this is because we use Broadcast message to send information to the children of objects with information regarding collisions (Like Damage stuff)
+
+
+UI stuff for Skills
+	We need 3 slots per skill
+	Four active skills (minimum) (L1R1L2R2)
+	Can we do this on one screen?
+		One way we could is using pulldown menus, so each component would be a pulldown of your currently available skills for that slot
+			This would give us the screen real-estate to keep everything on one screen, we would effectively have a 3x4 grid of pulldowns assuming minimum 3 slots per skill 4 skills
+
+Style/graphics
+	Drop the walls, instead have invisible walls along platform edges
+		Hinges on investigating Prototype Core Builder thing to see if we can make the platforms into interesting shapes.
+
+
+Things I want to fix in Scape:
+	Currently, inventory items are "owned" by the UI
+		I hate this
+		Would like to investigate ScriptableObjects for this purpose
+	
+	
