@@ -10,7 +10,7 @@ public class SpawnDamageNumberOnDamage : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		damageCanvas = GameObject.FindGameObjectWithTag("DamageCanvas");
+		damageCanvas = GameObject.FindGameObjectWithTag("CanvasWorldSpace");
 	}
 	
 	void Damage(float amount)

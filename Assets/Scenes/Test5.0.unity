@@ -207,7 +207,7 @@ GameObject:
   - 114: {fileID: 378497343}
   - 114: {fileID: 378497342}
   - 114: {fileID: 378497341}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,6 +238,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d838efe0e5d421a8ad99130bf985d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBarPrefab: {fileID: 11414474, guid: cf7158fe6eb5342f9a4436abe534eaa1, type: 2}
+  healthBarColors:
+    key0:
+      serializedVersion: 2
+      rgba: 4278190335
+    key1:
+      serializedVersion: 2
+      rgba: 4278247935
+    key2:
+      serializedVersion: 2
+      rgba: 65280
+    key3:
+      serializedVersion: 2
+      rgba: 0
+    key4:
+      serializedVersion: 2
+      rgba: 0
+    key5:
+      serializedVersion: 2
+      rgba: 0
+    key6:
+      serializedVersion: 2
+      rgba: 0
+    key7:
+      serializedVersion: 2
+      rgba: 0
+    ctime0: 0
+    ctime1: 32768
+    ctime2: 65535
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_NumColorKeys: 3
+    m_NumAlphaKeys: 2
+  healthBarPosition: {fileID: 1727589722}
   maxHealth: 50
 --- !u!114 &378497343
 MonoBehaviour:
@@ -307,6 +352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2084051111}
+  - {fileID: 1727589722}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1 &390240751
@@ -395,7 +441,7 @@ GameObject:
   - 114: {fileID: 555485272}
   - 114: {fileID: 555485271}
   m_Layer: 5
-  m_Name: MockWeaponInventoryCanvas
+  m_Name: CanvasMockWeaponInventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -615,8 +661,8 @@ GameObject:
   - 114: {fileID: 964714073}
   - 114: {fileID: 964714072}
   m_Layer: 5
-  m_Name: DamageCanvas
-  m_TagString: DamageCanvas
+  m_Name: CanvasWorldSpace
+  m_TagString: CanvasWorldSpace
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1574,6 +1620,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b652a74fda717404db2a08a41a549b1a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1727589721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1727589722}
+  m_Layer: 11
+  m_Name: HealthBarPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727589722
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727589721}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 378497347}
+  m_RootOrder: 1
 --- !u!1 &1801757334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,7 +2209,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2084051111}
   - 114: {fileID: 2084051112}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DamageSpawnPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
