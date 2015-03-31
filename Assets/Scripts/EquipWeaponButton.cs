@@ -4,19 +4,20 @@ using System.Collections;
 
 public class EquipWeaponButton : MonoBehaviour
 {
+	public Weapon associatedWeapon;
+	public static Button selectedWeaponButton;
+
 	public void EquipWeapon()
 	{
-		Weapon weapon = GetComponent<Weapon>();
-
-		Button oldButton = PlayerEquipment.Instance.currentWeapon.GetComponent<Button>();
-		if(oldButton)
+		if(selectedWeaponButton)
 		{
-			oldButton.interactable = true;
+			selectedWeaponButton.interactable = true;
 		}
 
-		PlayerEquipment.Instance.currentWeapon = weapon;
+		PlayerEquipment.Instance.currentWeapon = associatedWeapon;
 
 		Button button = GetComponent<Button>();
 		button.interactable = false;
+		selectedWeaponButton = button;
 	}
 }

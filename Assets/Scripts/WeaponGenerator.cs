@@ -30,18 +30,16 @@ public class WeaponGenerator : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		Weapon weapon = GenerateWeapon();
-		PlayerEquipment.Instance.currentWeapon = weapon;
-		weapon.GetComponent<Button>().interactable = false;
+		GenerateWeapon(true);
 	}
 
-	public Weapon GenerateWeapon()
+	public void GenerateWeapon(bool equipWeaponImmediately = false)
 	{
 		GameObject instance = Instantiate(buttonPrefab,Vector3.zero,Quaternion.identity) as GameObject;
 
 		instance.transform.SetParent(transform,false);
-		
-		TestWeapon weapon = instance.AddComponent<TestWeapon>();
+
+		TestWeapon weapon = new TestWeapon();
 		
 		foreach(Text text in instance.GetComponentsInChildren<Text>())
 		{
@@ -68,7 +66,15 @@ public class WeaponGenerator : MonoBehaviour
 				weapon.maxDamage = weaponMaxDamage;
 			}
 		}
-		return weapon;
+
+		PlayerEquipment.Instance.AddWeapon(weapon);
+
+		instance.GetComponent<EquipWeaponButton>().associatedWeapon = weapon;
+
+		if(equipWeaponImmediately)
+		{
+			instance.GetComponent<EquipWeaponButton>().EquipWeapon();
+		}
 	}
 	
 	// Update is called once per frame
