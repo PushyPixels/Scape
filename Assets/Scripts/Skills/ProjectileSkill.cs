@@ -5,13 +5,18 @@ public class ProjectileSkill : Skill
 {
 	public DamageInfo projectile;
 	public float cooldown = 0.1f;
+	public Transform shootLocation;
 
 	private bool canShoot = true;
 
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+	{
+		if(shootLocation == null)
+		{
+			shootLocation = transform;
+		}
 	}
 
 	void ResetShot ()
@@ -23,7 +28,7 @@ public class ProjectileSkill : Skill
 	{
 		if(canShoot)
 		{
-			DamageInfo instance = Instantiate(projectile,transform.position,transform.rotation) as DamageInfo;
+			DamageInfo instance = Instantiate(projectile,shootLocation.position,transform.rotation) as DamageInfo;
 
 			Weapon wep = PlayerEquipment.Instance.currentWeapon;
 			instance.damage = wep.WeaponDamage() * damagePercentage;
