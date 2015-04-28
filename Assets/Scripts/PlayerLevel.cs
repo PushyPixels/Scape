@@ -6,7 +6,7 @@ public class PlayerLevel : MonoBehaviour
 	public static PlayerLevel Instance;
 
 	[Header("Tweak Variables")]
-	public float perLevelBonusPercentage = 0.1f; //Ten percent
+	public float perLevelDamageBonusPercentage = 0.1f; //Ten percent
 	public int perLevelAttackRatingIncrease = 10;
 	public int perLevelDefenceRatingIncrease = 10;
 	public float perLevelHealthIncrease = 10.0f;
@@ -37,7 +37,7 @@ public class PlayerLevel : MonoBehaviour
 	public static void LevelUp()
 	{
 		Instance.currentLevel++;
-		Instance.damageBonusPercentage += Instance.perLevelBonusPercentage;
+		Instance.damageBonusPercentage += Instance.perLevelDamageBonusPercentage;
 		Instance.attackRating += Instance.perLevelAttackRatingIncrease;
 		Instance.defenseRating += Instance.perLevelDefenceRatingIncrease;
 	}
