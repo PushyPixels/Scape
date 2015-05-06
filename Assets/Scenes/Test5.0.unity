@@ -1302,7 +1302,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
 --- !u!1001 &1166830730
 Prefab:
   m_ObjectHideFlags: 0
@@ -1951,6 +1951,7 @@ MonoBehaviour:
   - Quaternion
   - Vector
   - SyberSquad
+  - Captcha
   maxWords: 4
   minDamage: 10
   maxDamage: 100
