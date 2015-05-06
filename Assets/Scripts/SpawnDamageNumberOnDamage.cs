@@ -32,10 +32,6 @@ public class SpawnDamageNumberOnDamage : MonoBehaviour
 		}
 		float averageDamage = runningAverage/numberOfHits;
 
-		Debug.Log ("AverageDamage = " + averageDamage.ToString());
-
-
-
 		Text instance = Instantiate(damageTextObject,transform.position,damageTextObject.transform.rotation) as Text;
 		instance.text = ((int)amount).ToString();
 		instance.transform.SetParent(damageCanvas.transform,false);

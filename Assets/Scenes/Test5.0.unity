@@ -1853,6 +1853,7 @@ GameObject:
   - 114: {fileID: 1586984860}
   - 114: {fileID: 1586984859}
   - 114: {fileID: 1586984858}
+  - 114: {fileID: 1586984864}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1952,6 +1953,10 @@ MonoBehaviour:
   - Vector
   - SyberSquad
   - Captcha
+  - reckt
+  - reckr
+  - Flange
+  - WHACHAAAA
   maxWords: 4
   minDamage: 10
   maxDamage: 100
@@ -2043,9 +2048,22 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -51.75}
-  m_SizeDelta: {x: -20, y: 83.5}
+  m_AnchoredPosition: {x: 0, y: 49.1500053}
+  m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1586984864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1586984857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 1
 --- !u!1001 &1667088931
 Prefab:
   m_ObjectHideFlags: 0
@@ -2372,9 +2390,11 @@ GameObject:
   - 222: {fileID: 2026496891}
   - 114: {fileID: 2026496890}
   - 114: {fileID: 2026496889}
+  - 114: {fileID: 2026496892}
+  - 114: {fileID: 2026496893}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: WeaponScrollPanel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2436,6 +2456,43 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2026496887}
+--- !u!114 &2026496892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2026496887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 1586984863}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: .100000001
+  m_Inertia: 1
+  m_DecelerationRate: .135000005
+  m_ScrollSensitivity: 1
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &2026496893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2026496887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9e1a0f48d9c42ffbdd9fe4a3c0601d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2028800846
 Prefab:
   m_ObjectHideFlags: 0
