@@ -31,7 +31,8 @@ public class ProjectileSkill : Skill
 			DamageInfo instance = Instantiate(projectile,shootLocation.position,transform.rotation) as DamageInfo;
 
 			Weapon wep = PlayerEquipment.Instance.currentWeapon;
-			instance.damage = wep.WeaponDamage() * damagePercentage;
+			instance.minDamage = wep.minDamage * damagePercentage;
+			instance.maxDamage = wep.maxDamage * damagePercentage;
 			
 			canShoot = false;
 			Invoke("ResetShot",cooldown);

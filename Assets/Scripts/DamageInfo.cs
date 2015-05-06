@@ -3,5 +3,11 @@ using System.Collections;
 
 public class DamageInfo : MonoBehaviour
 {
-	public float damage;
+	public float minDamage;
+	public float maxDamage;
+
+	public float RollDamage()
+	{
+		return Random.Range(minDamage,maxDamage);
+	}
 }

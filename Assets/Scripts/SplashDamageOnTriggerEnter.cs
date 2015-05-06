@@ -23,7 +23,7 @@ public class SplashDamageOnTriggerEnter : MonoBehaviour
 		//Do the damage
 		foreach(Collider col in Physics.OverlapSphere(transform.position,radius,layerMask))
 		{
-			col.BroadcastMessage("Damage",damageInfo.damage,SendMessageOptions.DontRequireReceiver);
+			col.BroadcastMessage("Damage",damageInfo.RollDamage(),SendMessageOptions.DontRequireReceiver);
 		}
 	}
 }
