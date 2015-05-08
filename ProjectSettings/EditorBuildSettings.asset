@@ -6,6 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/LoadTest.unity
-  - enabled: 1
-    path: Assets/LoadTest2.unity
+    path: Assets/Scenes/Test5.0.unity
